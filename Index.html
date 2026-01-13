@@ -1,0 +1,164 @@
+here<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nicelycat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #000000, #1a0000, #330000);
+            min-height: 100vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .site-title {
+            font-size: 2.5em;
+            font-weight: 900;
+            background: linear-gradient(45deg, #ff3300, #ff6600, #ff9900);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            padding: 35px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 100, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 100, 0, 0.3);
+            border-color: rgba(255, 150, 0, 0.5);
+        }
+
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff3300, #ff6600);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(255, 100, 0, 0.3);
+        }
+
+        .project-title {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #ffaa00;
+        }
+
+        .project-description {
+            color: #ffcc99;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(45deg, #ff3300, #ff6600);
+            color: #000;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 700;
+            transition: transform 0.2s;
+            border: none;
+        }
+
+        .project-link:hover {
+            transform: translateX(3px);
+            box-shadow: 0 5px 15px rgba(255, 100, 0, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: rgba(255, 150, 0, 0.5);
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: rgba(255, 150, 0, 0.7);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ffaa00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title">Nicelycat's websites and stuff</h1>
+        </header>
+
+        <div class="projects-grid">
+            <div class="project-card" onclick="window.open('https://nicelycat.github.io', '_blank')">
+                <div class="project-icon">🎮</div>
+                <h2 class="project-title">Unblocked Games</h2>
+                <p class="project-description">
+                    The Sunken Fate unblocked games
+                </p>
+                <a href="https://nicelycat.github.io" target="_blank" class="project-link">
+                    Play Now →
+                </a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/nicelycat/monkeytype', '_blank')">
+                <div class="project-icon">⚡</div>
+                <h2 class="project-title">Monkeytype Hacks</h2>
+                <p class="project-description">
+                    some cool little tools
+                </p>
+                <a href="https://github.com/nicelycat/monkeytype" target="_blank" class="project-link">
+                    View on GitHub →
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>nicelycat | <a href="https://github.com/nicelycat" target="_blank">GitHub Profile</a></p>
+        </footer>
+    </div>
+</body>
+</html>
